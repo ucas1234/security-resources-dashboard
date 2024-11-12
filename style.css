@@ -29,32 +29,33 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Vertically center the navbar items */
-    overflow: visible; /* Allow overflow for flexible widths */
+    overflow: hidden; /* Prevent overflow */
     white-space: nowrap; /* Prevent wrapping of navbar items */
 }
 
 .navbar ul {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap; /* Allow navbar items to wrap to the next line */
+    justify-content: center; /* Center the items */
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 15px;  /* Reduced gap between navbar items */
-    flex-wrap: nowrap; /* Prevent wrapping of navbar items */
-    width: 100%; /* Ensure the ul takes full width */
-    max-width: 1200px; /* Optional: to limit the navbar width */
-    margin: 0 auto; /* Optional: to center it if you want to limit the width */
+    gap: 15px; /* Gap between navbar items */
+    width: 100%; /* Ensure navbar uses the full width */
 }
 
 .navbar-item {
     color: white;
-    font-size: 14px; /* Reduced font size for smaller screens */
+    font-size: 14px; /* Default font size */
     cursor: pointer;
-    padding: 8px 16px; /* Reduced padding for better fitting */
+    padding: 8px 16px;
     border-radius: 4px;
     text-align: center;
     transition: background-color 0.3s, color 0.3s;
-    white-space: nowrap; /* Prevents the text from breaking into multiple lines */
+    white-space: nowrap;
+    flex-grow: 1; /* Allow items to grow and shrink */
+    min-width: 120px; /* Minimum width to prevent items from being too small */
+    text-align: center;
 }
 
 .navbar-item:hover {
@@ -69,12 +70,14 @@ h1, h2, h3, h4 {
     }
 
     .navbar ul {
-        gap: 10px; /* Reduced gap for mobile */
+        gap: 10px; /* Reduced gap for mobile screens */
+        justify-content: flex-start; /* Left-align navbar items */
     }
 
     .navbar-item {
-        font-size: 12px; /* Further reduce font size for smaller screens */
-        padding: 6px 12px; /* Further reduce padding */
+        font-size: 12px; /* Smaller font size for mobile */
+        padding: 6px 12px; /* Reduced padding for mobile */
+        min-width: 100px; /* Ensure each item has a minimum width */
     }
 }
 
@@ -84,7 +87,7 @@ h1, h2, h3, h4 {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 25px; /* Add space below the navbar */
 }
 
 /* Card Styles */
@@ -141,3 +144,5 @@ h1, h2, h3, h4 {
     margin: 0 auto;
     max-width: 1200px;
 }
+
+
