@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar">
-        <ul>
-            <li class="navbar-item">General Community Tools</li>
-            <li class="navbar-item">Network Security</li>
-            <li class="navbar-item">Detection Engineering</li>
-            <li class="navbar-item">EDR&XDR&NDR</li>
-            <li class="navbar-item">SIEM</li>
-            <li class="navbar-item">SOC</li>
-            <li class="navbar-item">Incident Response</li>
-            <li class="navbar-item">Threat Intelligence</li>
-            <li class="navbar-item">AI in SecOps</li>
-            <li class="navbar-item">Vulnerability Management</li>
-        </ul>
-    </nav>
-
-    <!-- Cards container -->
-    <div id="cards-container" class="cards-container"></div>
-
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" data-topic="General Community Tools">General Community Tools</a></li>
+                <li><a href="#" data-topic="Network Security">Network Security</a></li>
+                <li><a href="#" data-topic="Detection Engineering">Detection Engineering</a></li>
+                <li><a href="#" data-topic="EDR&XDR&NDR">EDR&XDR&NDR</a></li>
+                <li><a href="#" data-topic="SIEM">SIEM</a></li>
+                <li><a href="#" data-topic="SOC">SOC</a></li>
+                <li><a href="#" data-topic="Incident Response">Incident Response</a></li>
+                <li><a href="#" data-topic="Threat Intelligence">Threat Intelligence</a></li>
+                <li><a href="#" data-topic="AI in SecOps">AI in SecOps</a></li>
+                <li><a href="#" data-topic="Vulnerability Management">Vulnerability Management</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="resource-container">
+        <!-- Cards will be dynamically inserted here -->
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
