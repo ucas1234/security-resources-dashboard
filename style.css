@@ -24,10 +24,10 @@ h1, h2, h3, h4 {
     left: 0;
     width: 100%;
     background-color: #2a3d66;
-    padding: 10px 0;  /* Consistent padding */
+    padding: 10px 20px; /* Add padding to left and right of navbar */
     z-index: 1000;
     display: flex;
-    justify-content: center; /* Center items horizontally */
+    justify-content: space-between; /* Spread out navbar items across the screen */
     align-items: center; /* Vertically center the navbar items */
     overflow: hidden; /* Prevent overflow */
     white-space: nowrap; /* Prevent wrapping of navbar items */
@@ -35,19 +35,20 @@ h1, h2, h3, h4 {
 
 .navbar ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Evenly space navbar items */
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 15px;  /* Reduced gap between navbar items */
+    gap: 25px;  /* Increase gap between navbar items */
     flex-wrap: nowrap; /* Prevent wrapping of navbar items */
+    width: 100%; /* Ensure the navbar stretches to full width */
 }
 
 .navbar-item {
     color: white;
-    font-size: 14px; /* Reduced font size for smaller screens */
+    font-size: 14px; /* Adjusted font size */
     cursor: pointer;
-    padding: 8px 16px; /* Reduced padding for better fitting */
+    padding: 8px 16px; /* Adjust padding */
     border-radius: 4px;
     text-align: center;
     transition: background-color 0.3s, color 0.3s;
@@ -62,11 +63,11 @@ h1, h2, h3, h4 {
 /* Media Query for Mobile Screens */
 @media (max-width: 768px) {
     .navbar {
-        padding: 8px 0; /* Less padding for mobile */
+        padding: 8px 15px; /* Less padding for mobile */
     }
 
     .navbar ul {
-        gap: 10px; /* Reduced gap for mobile */
+        gap: 15px; /* Reduced gap for mobile */
     }
 
     .navbar-item {
