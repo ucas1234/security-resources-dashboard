@@ -357,6 +357,12 @@ function displayCards(topic) {
         cardsContainer.appendChild(card);
     });
 }
+// Toggle the Navbar for Mobile Devices
+document.getElementById('navbar-toggle').addEventListener('click', function() {
+    var navbarLinks = document.getElementById('navbar-links');
+    navbarLinks.classList.toggle('active');
+});
+
 
 // Handle navbar item click
 document.querySelectorAll('.navbar-item').forEach(item => {
@@ -366,11 +372,6 @@ document.querySelectorAll('.navbar-item').forEach(item => {
     });
 });
 
-// Toggle the Navbar for Mobile Devices
-document.getElementById('navbar-toggle').addEventListener('click', function() {
-    var navbarLinks = document.getElementById('navbar-links');
-    navbarLinks.classList.toggle('active');
-});
 
 // Display cards for the default topic when the page loads
 window.onload = function() {
