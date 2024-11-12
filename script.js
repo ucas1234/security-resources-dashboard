@@ -357,12 +357,6 @@ function displayCards(topic) {
         cardsContainer.appendChild(card);
     });
 }
-// Toggle the Navbar for Mobile Devices
-document.getElementById('navbar-toggle').addEventListener('click', function() {
-    var navbarLinks = document.getElementById('navbar-links');
-    navbarLinks.classList.toggle('active');
-});
-
 
 // Handle navbar item click
 document.querySelectorAll('.navbar-item').forEach(item => {
