@@ -24,10 +24,10 @@ h1, h2, h3, h4 {
     left: 0;
     width: 100%;
     background-color: #2a3d66;
-    padding: 10px 20px; /* Add padding to left and right of navbar */
+    padding: 10px 0;  /* Consistent padding */
     z-index: 1000;
     display: flex;
-    justify-content: space-between; /* Spread out navbar items across the screen */
+    justify-content: center; /* Center items horizontally */
     align-items: center; /* Vertically center the navbar items */
     overflow: hidden; /* Prevent overflow */
     white-space: nowrap; /* Prevent wrapping of navbar items */
@@ -35,20 +35,19 @@ h1, h2, h3, h4 {
 
 .navbar ul {
     display: flex;
-    justify-content: space-between; /* Evenly space navbar items */
+    justify-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 25px;  /* Increase gap between navbar items */
+    gap: 15px;  /* Reduced gap between navbar items */
     flex-wrap: nowrap; /* Prevent wrapping of navbar items */
-    width: 100%; /* Ensure the navbar stretches to full width */
 }
 
 .navbar-item {
     color: white;
-    font-size: 14px; /* Adjusted font size */
+    font-size: 14px; /* Reduced font size for smaller screens */
     cursor: pointer;
-    padding: 8px 16px; /* Adjust padding */
+    padding: 8px 16px; /* Reduced padding for better fitting */
     border-radius: 4px;
     text-align: center;
     transition: background-color 0.3s, color 0.3s;
@@ -63,11 +62,11 @@ h1, h2, h3, h4 {
 /* Media Query for Mobile Screens */
 @media (max-width: 768px) {
     .navbar {
-        padding: 8px 15px; /* Less padding for mobile */
+        padding: 8px 0; /* Less padding for mobile */
     }
 
     .navbar ul {
-        gap: 15px; /* Reduced gap for mobile */
+        gap: 10px; /* Reduced gap for mobile */
     }
 
     .navbar-item {
@@ -138,67 +137,4 @@ h1, h2, h3, h4 {
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
-}
-
-.card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    word-wrap: break-word;  /* Prevents long words (like URLs) from overflowing */
-    overflow-wrap: break-word; /* For additional compatibility */
-    position: relative;  /* To allow positioning of background image */
-}
-
-.card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 120px;  /* Adjust height based on your design needs */
-    background-image: url('your-image-url.jpg');  /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px 8px 0 0;  /* Rounded top corners for a smoother look */
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Card Title, Description, and Content */
-.card-title {
-    font-size: 18px;
-    font-weight: 600;
-    color: #2a3d66;
-    margin-bottom: 10px;
-    position: relative;  /* Ensure title appears above the background image */
-    z-index: 1;  /* Ensures the title is on top of the image */
-}
-
-.card-description {
-    color: #666;
-    margin-bottom: 15px;
-}
-
-.card a {
-    color: #2a3d66;
-    text-decoration: none;
-    font-weight: 600;
-    display: block;  /* Ensures the link is treated as a block element */
-    word-break: break-word; /* Ensure the link wraps properly */
-    white-space: normal;  /* Allow the text to wrap and not be in a single line */
-}
-
-.card a:hover {
-    color: #4b5d7e;
-}
-
-.card p {
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: #555;
 }
