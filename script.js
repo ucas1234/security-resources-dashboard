@@ -366,7 +366,6 @@ document.querySelectorAll('.navbar-item').forEach(item => {
     });
 });
 
-
 // Display cards for the default topic when the page loads
 window.onload = function() {
     displayCards("General Community Tools");
