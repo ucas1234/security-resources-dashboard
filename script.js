@@ -221,6 +221,17 @@ const resources = [
         "secondaryTopic": "Vulnerability Management",
         "tertiaryTopic": "Risk Management",
         "quaternaryTopic": "Continuous Scanning"
+    },
+    {
+        "primaryTopic": "Vulnerability Management",
+        "resourceName": "PLACEHOLDER",
+        "description": "Platform for comprehensive vulnerability management and risk reduction.",
+        "resourceProvider": "Tenable",
+        "link": "https://www.tenable.com",
+        "wavestoneUseCases": "Vulnerability Assessment",
+        "secondaryTopic": "Vulnerability Management",
+        "tertiaryTopic": "Risk Management",
+        "quaternaryTopic": "Continuous Scanning"
     }
 ];
 
