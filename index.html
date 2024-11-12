@@ -5,42 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Security Dashboard</title>
 
-    <!-- Bootstrap CSS for modern UI -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap CSS for layout and styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- FontAwesome for icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
-    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- D3.js for data manipulation -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Security Resources Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-topic="General Community Tools">General Community Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-topic="Network">Network</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-topic="Security">Security</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-topic="Detection Engineering">Detection Engineering</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-topic="EDR & NDR & XDR">EDR & NDR & XDR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-topic="SIEM">SIEM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-topic="SOC">SOC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-topic="Incident Response">Incident Response</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-topic="Threat Intelligence">Threat Intelligence</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-topic="AI in SecOps">AI in SecOps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-topic="Vulnerability Management">Vulnerability Management</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content area -->
     <header class="bg-success text-white text-center p-5">
         <h1>Interactive Security Dashboard</h1>
-        <p>Links to useful resources across 10 security-related topics.</p>
+        <p>Select a topic to explore resources related to that area of security.</p>
     </header>
 
-    <main class="container my-5">
-        <div class="row">
-            <!-- Example card for General Community Tools -->
-            <div class="col-md-4">
-                <div class="card shadow-sm mb-4">
-                    <img src="images/resource-image.jpg" class="card-img-top" alt="Resource Image">
-                    <div class="card-body">
-                        <h5 class="card-title">General Community Tools</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Primary Topic: Security</h6>
-                        <p class="card-text">Description of the resource that explains what it offers and how it can help users.</p>
-                        <p><strong>Provider:</strong> Community Provider Name</p>
-                        <p><strong>Wavestone Use Cases:</strong> Brief overview of how the tool is used.</p>
-                        <p><strong>Secondary Topic:</strong> Network</p>
-                        <p><strong>Tertiary Topic:</strong> Incident Response</p>
-                        <p><strong>Quaternary Topic:</strong> Threat Intelligence</p>
-                        <a href="https://www.example.com" target="_blank" class="btn btn-success">Go to Resource</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Additional cards can be added here with the same structure -->
-
+    <!-- Cards container -->
+    <main class="container my-5" id="cards-container">
+        <div class="row" id="cards-row">
+            <!-- Cards will be dynamically inserted here -->
         </div>
     </main>
 
@@ -48,10 +82,11 @@
         <p>Dashboard created by [Your Name]</p>
     </footer>
 
-    <!-- Bootstrap JS and dependencies (for responsive behavior, modals, etc.) -->
+    <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Your own JS file (for interactivity if needed) -->
+    <!-- Your JavaScript code for dynamic functionality -->
     <script src="script.js"></script>
+
 </body>
 </html>

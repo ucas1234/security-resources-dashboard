@@ -2,61 +2,44 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
 }
 
-/* Header Styling */
-header {
-    background-color: #4CAF50;
-    padding: 40px 0;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-/* Card Styling */
+/* Cards Styling */
 .card {
-    border: none;
     border-radius: 10px;
     overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card-body {
-    padding: 20px;
+    padding: 15px;
 }
 
 .card-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
-}
-
-.card-subtitle {
-    font-size: 1rem;
 }
 
 .card-text {
     font-size: 1rem;
-    margin-bottom: 1rem;
 }
 
-.card a {
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
+/* Navbar Styling */
+.navbar {
+    margin-bottom: 20px;
 }
 
 /* Footer Styling */
 footer {
-    background-color: #333;
-    color: white;
+    margin-top: 50px;
     padding: 20px;
+    background-color: #222;
+}
+
+footer p {
+    margin: 0;
 }
