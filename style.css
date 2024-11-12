@@ -38,7 +38,7 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: flex-start; /* Align navbar items horizontally */
     list-style: none;
-    gap: 20px;  /* Space between the navbar items */
+    gap: 0px;  /* Space between the navbar items */
     margin: 0;
     padding: 0;
     flex-wrap: nowrap; /* Prevent wrapping of items */
@@ -66,7 +66,7 @@ h1, h2, h3, h4 {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
     padding: 20px;
-    margin-top: 25px; /* Small margin to give space without being too much */
+    margin-top: 70px; /* Small margin to give space without being too much */
 }
 
 /* Card Styles */
@@ -138,7 +138,7 @@ h1, h2, h3, h4 {
 
     /* Adjust cards container margin for smaller screens */
     .cards-container {
-        margin-top: 25px; /* Reduce space on mobile */
+        margin-top: 70px; /* Reduce space on mobile */
     }
 
     /* Optionally, adjust card grid layout for smaller screens */
