@@ -10,7 +10,8 @@ body {
     background-color: #f4f7fa;
     color: #333;
     line-height: 1.6;
-    padding-top: 60px; /* To prevent navbar from overlapping with content */
+    padding-top: 60px; /* Reasonable space to offset navbar */
+    margin-top: 0; /* Reset margin to avoid extra space */
 }
 
 h1, h2, h3, h4 {
@@ -24,61 +25,39 @@ h1, h2, h3, h4 {
     left: 0;
     width: 100%;
     background-color: #2a3d66;
-    padding: 10px 0;  /* Consistent padding */
+    padding: 10px 0;  /* Default padding for navbar */
     z-index: 1000;
     display: flex;
-    justify-content: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items to the left */
     align-items: center; /* Vertically center the navbar items */
-    overflow: hidden; /* Prevent overflow */
-    white-space: nowrap; /* Prevent wrapping of navbar items */
+    overflow-x: auto; /* Allows horizontal scrolling if the navbar content is too wide */
+    white-space: nowrap; /* Prevent items from wrapping to the next line */
 }
 
 .navbar ul {
     display: flex;
-    flex-wrap: wrap; /* Allow navbar items to wrap to the next line */
-    justify-content: center; /* Center the items */
+    justify-content: flex-start; /* Align navbar items horizontally */
     list-style: none;
+    gap: 20px;  /* Space between the navbar items */
     margin: 0;
     padding: 0;
-    gap: 15px; /* Gap between navbar items */
-    width: 100%; /* Ensure navbar uses the full width */
+    flex-wrap: nowrap; /* Prevent wrapping of items */
 }
 
 .navbar-item {
     color: white;
-    font-size: 14px; /* Default font size */
+    font-size: 16px;
     cursor: pointer;
-    padding: 8px 16px;
+    padding: 10px 20px;
     border-radius: 4px;
-    text-align: center;
+    text-align: center; /* Ensure text is centered in each item */
     transition: background-color 0.3s, color 0.3s;
-    white-space: nowrap;
-    flex-grow: 1; /* Allow items to grow and shrink */
-    min-width: 120px; /* Minimum width to prevent items from being too small */
-    text-align: center;
+    white-space: nowrap; /* Prevents the text from breaking into multiple lines */
 }
 
 .navbar-item:hover {
     background-color: #4b5d7e;
     color: #f4f7fa;
-}
-
-/* Media Query for Mobile Screens */
-@media (max-width: 768px) {
-    .navbar {
-        padding: 8px 0; /* Less padding for mobile */
-    }
-
-    .navbar ul {
-        gap: 10px; /* Reduced gap for mobile screens */
-        justify-content: flex-start; /* Left-align navbar items */
-    }
-
-    .navbar-item {
-        font-size: 12px; /* Smaller font size for mobile */
-        padding: 6px 12px; /* Reduced padding for mobile */
-        min-width: 100px; /* Ensure each item has a minimum width */
-    }
 }
 
 /* Cards Container */
@@ -87,7 +66,7 @@ h1, h2, h3, h4 {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
     padding: 20px;
-    margin-top: 25px; /* Add space below the navbar */
+    margin-top: 70px; /* Small margin to give space without being too much */
 }
 
 /* Card Styles */
@@ -145,4 +124,31 @@ h1, h2, h3, h4 {
     max-width: 1200px;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust navbar padding for smaller screens */
+    .navbar {
+        padding: 10px 0; /* Adjust navbar height on smaller screens */
+    }
 
+    /* Adjust body padding to account for smaller navbar height */
+    body {
+        padding-top: 55px; /* Slightly reduced padding for mobile */
+    }
+
+    /* Adjust cards container margin for smaller screens */
+    .cards-container {
+        margin-top: 70px; /* Reduce space on mobile */
+    }
+
+    /* Optionally, adjust card grid layout for smaller screens */
+    .cards-container {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Smaller columns */
+    }
+
+    /* Make navbar items more compact on small screens */
+    .navbar-item {
+        font-size: 14px; /* Smaller font size */
+        padding: 8px 16px; /* Reduced padding */
+    }
+}
