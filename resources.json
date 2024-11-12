@@ -1,51 +1,22 @@
 [
     {
-      "name": "Slack Community",
-      "description": "A general community for discussing cybersecurity topics.",
-      "resourceProvider": "Slack",
-      "link": "https://slack.com/",
       "primaryTopic": "General Community Tools",
-      "secondaryTopic": "Collaboration",
-      "tertiaryTopic": "Communication",
-      "quaternaryTopic": "Cybersecurity",
-      "image": "image1.jpg",
-      "wavestoneUseCases": "Collaboration and sharing information."
+      "resourceName": "Open Source Intelligence (OSINT) Framework",
+      "description": "A comprehensive framework for gathering and analyzing OSINT data.",
+      "resourceProviderName": "Various Contributors",
+      "link": "https://github.com/jivoi/open-source-intelligence",
+      "wavestoneUseCases": ["Threat Hunting", "Incident Response"],
+      "secondaryTopic": "Threat Intelligence",
+      "tertiaryTopic": "Incident Response"
     },
     {
-      "name": "GitHub Security Resources",
-      "description": "A collection of cybersecurity repositories on GitHub.",
-      "resourceProvider": "GitHub",
-      "link": "https://github.com/topics/security",
-      "primaryTopic": "General Community Tools",
-      "secondaryTopic": "Development",
-      "tertiaryTopic": "Open-Source",
-      "quaternaryTopic": "Cybersecurity",
-      "image": "image2.jpg",
-      "wavestoneUseCases": "Collaborative development of security tools."
-    },
-    {
-      "name": "Wireshark",
-      "description": "A popular tool for network traffic analysis.",
-      "resourceProvider": "Wireshark Foundation",
-      "link": "https://www.wireshark.org/",
       "primaryTopic": "Network Security",
-      "secondaryTopic": "Packet Analysis",
-      "tertiaryTopic": "Networking",
-      "quaternaryTopic": "Security",
-      "image": "image1.jpg",
-      "wavestoneUseCases": "Deep packet inspection and network monitoring."
-    },
-    {
-      "name": "Snort IDS",
-      "description": "Open-source intrusion detection system for network security.",
-      "resourceProvider": "Cisco",
-      "link": "https://www.snort.org/",
-      "primaryTopic": "Network Security",
-      "secondaryTopic": "Intrusion Detection",
-      "tertiaryTopic": "Security Operations",
-      "quaternaryTopic": "Threat Detection",
-      "image": "image2.jpg",
-      "wavestoneUseCases": "Monitoring network traffic for potential threats."
+      "resourceName": "Network Security Toolkit (NST)",
+      "description": "A collection of open-source tools for network security assessments.",
+      "resourceProviderName": "Various Contributors",
+      "link": "https://github.com/jivoi/network-security-toolkit",
+      "wavestoneUseCases": ["Network Security Assessments", "Vulnerability Scanning"],
+      "secondaryTopic": "Vulnerability Management",
+      "tertiaryTopic": "Detection Engineering"
     }
   ]
-  
