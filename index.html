@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Security Dashboard</title>
 
-    <!-- Bootstrap CSS for layout and styling -->
+    <!-- Bootstrap for layout and responsive design -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- FontAwesome for icons -->
@@ -14,12 +14,13 @@
     <!-- D3.js for data manipulation -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Security Resources Dashboard</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,16 +32,13 @@
                         <a class="nav-link active" href="#" data-topic="General Community Tools">General Community Tools</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" data-topic="Network">Network</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-topic="Security">Security</a>
+                        <a class="nav-link" href="#" data-topic="Network Security">Network Security</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-topic="Detection Engineering">Detection Engineering</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" data-topic="EDR & NDR & XDR">EDR & NDR & XDR</a>
+                        <a class="nav-link" href="#" data-topic="EDR & XDR & NDR">EDR & XDR & NDR</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-topic="SIEM">SIEM</a>
@@ -65,19 +63,20 @@
         </div>
     </nav>
 
-    <!-- Main content area -->
-    <header class="bg-success text-white text-center p-5">
-        <h1>Interactive Security Dashboard</h1>
+    <!-- Header -->
+    <header class="bg-dark text-white text-center py-5">
+        <h1 class="display-4">Interactive Security Dashboard</h1>
         <p>Select a topic to explore resources related to that area of security.</p>
     </header>
 
-    <!-- Cards container -->
-    <main class="container my-5" id="cards-container">
-        <div class="row" id="cards-row">
+    <!-- Main content area -->
+    <div class="container my-5">
+        <div class="row" id="cards-container">
             <!-- Cards will be dynamically inserted here -->
         </div>
-    </main>
+    </div>
 
+    <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <p>Dashboard created by [Your Name]</p>
     </footer>
@@ -85,8 +84,7 @@
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Your JavaScript code for dynamic functionality -->
+    <!-- Custom JS to render cards dynamically -->
     <script src="script.js"></script>
-
 </body>
 </html>
