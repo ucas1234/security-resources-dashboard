@@ -65,6 +65,8 @@ h1, h2, h3, h4 {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    word-wrap: break-word;  /* Prevents long words (like URLs) from overflowing */
+    overflow-wrap: break-word; /* For additional compatibility */
 }
 
 .card:hover {
@@ -88,6 +90,7 @@ h1, h2, h3, h4 {
     color: #2a3d66;
     text-decoration: none;
     font-weight: 600;
+    word-break: break-word; /* Ensures the link wraps if it's too long */
 }
 
 .card a:hover {
@@ -107,4 +110,3 @@ h1, h2, h3, h4 {
     margin: 0 auto;
     max-width: 1200px;
 }
-
