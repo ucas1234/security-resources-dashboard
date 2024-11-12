@@ -1,5 +1,3 @@
-// script.js
-
 // Define the resources directly in the script
 const resources = [
     {
@@ -926,10 +924,6 @@ const resources = [
         "tertiaryTopic": "Risk Management",
         "quaternaryTopic": "Continuous Scanning"
     },
-    // script.js
-
-// Define the resources directly in the script
-const resources = [
     {
         "primaryTopic": "General Community Tools",
         "resourceName": "OWASP Resources",
@@ -1392,10 +1386,6 @@ const resources = [
         "tertiaryTopic": "Risk Management",
         "quaternaryTopic": "Continuous Scanning"
     },
-    // script.js
-
-// Define the resources directly in the script
-const resources = [
     {
         "primaryTopic": "General Community Tools",
         "resourceName": "OWASP Resources",
