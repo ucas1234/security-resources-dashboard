@@ -7,7 +7,7 @@
         "link": "https://owasp.org",
         "wavestoneUseCases": "Web Application Security",
         "secondaryTopic": "Web Security",
-        "tertiaryTopic": "Testing",
+        "tertiaryTopic": "Vulnerability Management",
         "quaternaryTopic": "Open Source"
     },
     {
@@ -20,6 +20,105 @@
         "secondaryTopic": "Pentesting",
         "tertiaryTopic": "Linux",
         "quaternaryTopic": "OS"
+    },
+    {
+        "primaryTopic": "General Community Tools",
+        "resourceName": "Cybersecurity: Databases & Recommended Resources",
+        "description": "A collection of resources relating to Cyber Security.",
+        "resourceProvider": "Fordham University Libraries",
+        "link": "https://fordham.libguides.com/Cybersecurity/Databases",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "",
+        "tertiaryTopic": "",
+        "quaternaryTopic": ""
+    },
+    {
+        "primaryTopic": "General Community Tools",
+        "resourceName": "CYBER DATABASE",
+        "description": "CyberDB maintains up-to-date analysis and research of cyber solutions from all over the world.",
+        "resourceProvider": "Cyber DB",
+        "link": "https://www.cyberdb.co/database/",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "",
+        "tertiaryTopic": "",
+        "quaternaryTopic": ""
+    },
+    {
+        "primaryTopic": "General Community Tools",
+        "resourceName": "LinkedIn Text Formatter",
+        "description": "Format your LinkedIn post with bold, italic and more for free.",
+        "resourceProvider": "Typegrow",
+        "link": "https://typegrow.com/tools/linkedin-text-formatter",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "Marketing",
+        "tertiaryTopic": "",
+        "quaternaryTopic": ""
+    },
+    {
+        "primaryTopic": "General Community Tools",
+        "resourceName": "arXiv",
+        "description": "arXiv is a free distribution service and an open-access archive for nearly 2.4 million scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics. Materials on this site are not peer-reviewed by arXiv.",
+        "resourceProvider": "Cornell University",
+        "link": "https://arxiv.org/",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "",
+        "tertiaryTopic": "",
+        "quaternaryTopic": ""
+    },
+    {
+        "primaryTopic": "General Community Tools",
+        "resourceName": "Organising Security for Digital Transformation",
+        "description": "Explore more than 916 billion web pages saved over time.",
+        "resourceProvider": "Google Cloud",
+        "link": "https://web.archive.org/",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "",
+        "tertiaryTopic": "",
+        "quaternaryTopic": ""
+    },
+    {
+        "primaryTopic": "General Community Tools",
+        "resourceName": "Altitude Cyber Market Reviews",
+        "description": "Regular cybersecurity market reviews that highlight trends in mergers and acquisitions, private equity, public markets, company valuations, industry news, upcoming conferences, sector trends, and much more.",
+        "resourceProvider": "Altitude Cyber",
+        "link": "https://www.altitudecyber.com/resources/altitude-cyber-market-reviews?utm_source=substack&utm_medium=email",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "",
+        "tertiaryTopic": "",
+        "quaternaryTopic": ""
+    },
+    {
+        "primaryTopic": "General Community Tools",
+        "resourceName": "WayBack Machine",
+        "description": "Explore more than 916 billion web pages saved over time.",
+        "resourceProvider": "Internet Archive",
+        "link": "https://web.archive.org/",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "",
+        "tertiaryTopic": "",
+        "quaternaryTopic": ""
+    },
+    {
+        "primaryTopic": "General Community Tools",
+        "resourceName": "OWASP CHEAT SHEET",
+        "description": "The OWASP Cheat Sheet Series was created to provide a concise collection of high value information on specific application security topics. These cheat sheets were created by various application security professionals who have expertise in specific topics.",
+        "resourceProvider": "OWASP",
+        "link": "https://cheatsheetseries.owasp.org/index.html",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "Network Security",
+        "tertiaryTopic": "",
+        "quaternaryTopic": ""
+    },
+    {
+        "primaryTopic": "General Community Tools",
+        "resourceName": "SANS Institute",
+        "description": "Offers information security training and certification. Provides resources on network security, including courses, papers, and tools.",
+        "resourceProvider": "SANS Institute",
+        "link": "https://www.sans.org/uk_en/",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "Network Security",
+        "tertiaryTopic": "Threat Intelligence",
+        "quaternaryTopic": "Vulnerability Management"
     },
     {
         "primaryTopic": "Network Security",
@@ -211,6 +310,17 @@
     {
         "primaryTopic": "Vulnerability Management",
         "resourceName": "Tenable.io",
+        "description": "Platform for comprehensive vulnerability management and risk reduction.",
+        "resourceProvider": "Tenable",
+        "link": "https://www.tenable.com",
+        "wavestoneUseCases": "Vulnerability Assessment",
+        "secondaryTopic": "Vulnerability Management",
+        "tertiaryTopic": "Risk Management",
+        "quaternaryTopic": "Continuous Scanning"
+    },
+    {
+        "primaryTopic": "Vulnerability Management",
+        "resourceName": "PLACEHOLDER",
         "description": "Platform for comprehensive vulnerability management and risk reduction.",
         "resourceProvider": "Tenable",
         "link": "https://www.tenable.com",
