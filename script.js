@@ -1,37 +1,62 @@
-const resources = [/* ... data from resources.json */];
-const cardContainer = document.getElementById('card-container');
-const navLinks = document.querySelectorAll('nav ul li a');
+// Fetch the resources data from the JSON file
+async function fetchResources() {
+    const response = await fetch('resources.json');
+    const data = await response.json();
+    return data;
+}
 
+// Function to display the cards based on the selected topic
+function displayCards(topic) {
+    fetchResources().then(resources => {
+        const container = document.getElementById('resource-container');
+        container.innerHTML = ''; // Clear previous cards
+        
+        // Filter the resources based on the selected topic
+        const filteredResources = resources.filter(resource => resource.primaryTopic === topic);
+        
+        // Create cards for the filtered resources
+        filteredResources.forEach(resource => {
+            const card = createCard(resource);
+            container.appendChild(card);
+        });
+    });
+}
+
+// Function to create a card for a resource
 function createCard(resource) {
-  const card = document.createElement('div');
-  card.classList.add('card');
-  card.innerHTML = `
-    <h2>${resource.resourceName}</h2>
-    <p>${resource.description}</p>
-    <p><strong>Provider:</strong> ${resource.resourceProviderName}</p>
-    <a href="${resource.link}" target="_blank">Learn More</a>
-    <p><strong>Wavestone Use Cases:</strong> ${resource.wavestoneUseCases.join(', ')}</p>
-    <p><strong>Secondary Topic:</strong> ${resource.secondaryTopic}</p>
-    <p><strong>Tertiary Topic:</strong> ${resource.tertiaryTopic}</p>
-  `;
-  cardContainer.appendChild(card);
+    const card = document.createElement('div');
+    card.classList.add('card');
+
+    card.innerHTML = `
+        <div class="card-header">
+            <h3>${resource.resourceName}</h3>
+        </div>
+        <div class="card-body">
+            <p><strong>Primary Topic:</strong> ${resource.primaryTopic}</p>
+            <p><strong>Description:</strong> ${resource.description}</p>
+            <p><strong>Provider:</strong> ${resource.resourceProvider}</p>
+            <p><strong>Secondary Topic:</strong> ${resource.secondaryTopic}</p>
+            <p><strong>Tertiary Topic:</strong> ${resource.tertiaryTopic}</p>
+            <p><strong>Quaternary Topic:</strong> ${resource.quaternaryTopic}</p>
+        </div>
+        <div class="card-footer">
+            <a href="${resource.link}" target="_blank">Go to Resource</a>
+        </div>
+    `;
+    
+    return card;
 }
 
-function filterCards(topic) {
-  cardContainer.innerHTML = '';
-  resources.forEach(resource => {
-    if (resource.primaryTopic === topic) {
-      createCard(resource);
-    }
-  });
-}
-
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    const topic = link.dataset.topic;
-    filterCards(topic);
-  });
+// Set up the navigation links to filter by topic
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const topic = event.target.getAttribute('data-topic');
+        displayCards(topic);
+    });
 });
 
-// Initial load, show all cards
-filterCards('All'); // Or a default topic
+// Load initial cards for "General Community Tools"
+window.onload = () => {
+    displayCards("General Community Tools");
+};
