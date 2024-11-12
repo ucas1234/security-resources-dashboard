@@ -10,8 +10,7 @@ body {
     background-color: #f4f7fa;
     color: #333;
     line-height: 1.6;
-    /* Adjusted padding-top to reduce space between navbar and first card */
-    padding-top: 50px; /* Adjust as needed */
+    padding-top: 60px; /* Reasonable space to offset navbar */
     margin-top: 0; /* Reset margin to avoid extra space */
 }
 
@@ -67,8 +66,7 @@ h1, h2, h3, h4 {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
     padding: 20px;
-    /* Reduced margin-top to bring cards closer to navbar */
-    margin-top: 40px; /* Adjusted value to reduce space */
+    margin-top: 25px; /* Small margin to give space without being too much */
 }
 
 /* Card Styles */
@@ -135,12 +133,12 @@ h1, h2, h3, h4 {
 
     /* Adjust body padding to account for smaller navbar height */
     body {
-        padding-top: 50px; /* Slightly reduced padding for mobile */
+        padding-top: 55px; /* Slightly reduced padding for mobile */
     }
 
     /* Adjust cards container margin for smaller screens */
     .cards-container {
-        margin-top: 50px; /* Reduce space on mobile */
+        margin-top: 25px; /* Reduce space on mobile */
     }
 
     /* Optionally, adjust card grid layout for smaller screens */
