@@ -1,154 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Security Resources Dashboard</title>
-
-    <!-- Link to external CSS file -->
-    <link href="styles.css" rel="stylesheet" type="text/css">
-
-    <!-- Bootstrap 4 CSS (for styling) -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- D3.js -->
-    <script src="https://d3js.org/d3.v5.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Web Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Navbar for topic selection -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Security Resources</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" data-topic="General Community Tools">General Community Tools</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-topic="Network Security">Network Security</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-topic="Detection Engineering">Detection Engineering</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-topic="EDR & XDR & NDR">EDR & XDR & NDR</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-topic="SIEM">SIEM</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-topic="SOC">SOC</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-topic="Incident Response">Incident Response</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-topic="Threat Intelligence">Threat Intelligence</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-topic="AI in SecOps">AI in SecOps</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-topic="Vulnerability Management">Vulnerability Management</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+  <!-- Navbar -->
+  <nav>
+    <ul id="navbar">
+      <li><a href="#" data-topic="general-community-tools">General Community Tools</a></li>
+      <li><a href="#" data-topic="network-security">Network Security</a></li>
+      <li><a href="#" data-topic="detection-engineering">Detection Engineering</a></li>
+      <li><a href="#" data-topic="edr-xdr-ndr">EDR&XDR&NDR</a></li>
+      <li><a href="#" data-topic="siem">SIEM</a></li>
+      <li><a href="#" data-topic="soc">SOC</a></li>
+      <li><a href="#" data-topic="incident-response">Incident Response</a></li>
+      <li><a href="#" data-topic="threat-intelligence">Threat Intelligence</a></li>
+      <li><a href="#" data-topic="ai-in-secops">AI in SecOps</a></li>
+      <li><a href="#" data-topic="vulnerability-management">Vulnerability Management</a></li>
+    </ul>
+  </nav>
 
-<!-- Main content area where cards will be rendered -->
-<div class="container">
-    <h1 class="text-center mb-4">Security Resources Dashboard</h1>
-    
-    <!-- Cards container (empty initially, will be populated dynamically) -->
-    <div id="cards-container" class="row">
-        <!-- Cards will be dynamically inserted here by D3.js -->
-    </div>
-</div>
+  <!-- Main Content Section for Cards -->
+  <section id="cards-container"></section>
 
-<!-- Bootstrap 4 JS (for functionality like dropdowns, collapsible navbar) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<!-- Custom JavaScript (D3.js and fetch for JSON) -->
-<script>
-// Function to fetch the JSON data and render the cards
-async function fetchResources() {
-    try {
-        console.log("Fetching resources...");
-        const response = await fetch('resources.json');
-        
-        // Check if the response is ok
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-
-        const resources = await response.json();
-        console.log("Resources loaded successfully:", resources);
-
-        renderCards("General Community Tools", resources); // Render cards for the default topic
-    } catch (error) {
-        console.error("Error loading resources:", error);
-    }
-}
-
-// Function to render the cards based on the selected topic
-function renderCards(topic, resources) {
-    console.log("Rendering cards for topic:", topic);
-
-    // Filter resources based on the selected topic
-    const filteredResources = topic === "General Community Tools" ? resources : resources.filter(r => r.primaryTopic === topic);
-
-    // Check if there are any resources for the selected topic
-    console.log("Filtered resources:", filteredResources);
-
-    // Select the container where the cards will go and clear it
-    const cardsContainer = d3.select("#cards-container");
-    cardsContainer.html(""); // Clear the existing cards
-
-    // Bind data to the cards and append the cards to the DOM
-    const cards = cardsContainer
-        .selectAll(".col-md-4")
-        .data(filteredResources)
-        .enter()
-        .append("div")
-        .attr("class", "col-md-4 mb-4")
-        .append("div")
-        .attr("class", "card shadow-lg");
-
-    // Add image, title, description, and links to the cards
-    cards.append("img")
-        .attr("class", "card-img-top")
-        .attr("src", d => d.imageUrl)
-        .attr("alt", d => d.resourceName);
-
-    cards.append("div")
-        .attr("class", "card-body")
-        .html(d => `
-            <h5 class="card-title">${d.resourceName}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Primary Topic: ${d.primaryTopic}</h6>
-            <p class="card-text">${d.description}</p>
-            <p><strong>Provider:</strong> ${d.providerName}</p>
-            <p><strong>Wavestone Use Cases:</strong> ${d.wavestoneUseCases}</p>
-            <p><strong>Secondary Topic:</strong> ${d.secondaryTopic}</p>
-            <p><strong>Tertiary Topic:</strong> ${d.tertiaryTopic}</p>
-            <p><strong>Quaternary Topic:</strong> ${d.quaternaryTopic}</p>
-            <a href="${d.link}" target="_blank" class="btn btn-success">Go to Resource</a>
-        `);
-}
-
-// Event listener for navbar links to filter cards dynamically
-d3.selectAll('.nav-link').on('click', function(event) {
-    const topic = event.target.getAttribute('data-topic');
-    fetchResources().then(() => renderCards(topic)); // Fetch resources and then render for the selected topic
-});
-
-// Call the fetchResources function to initialize the page
-fetchResources();
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>
