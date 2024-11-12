@@ -21,6 +21,12 @@ async function displayCards(topic) {
         const card = document.createElement('div');
         card.classList.add('card');
 
+        // Example: Use the resource name or another property to set the image
+        const backgroundImage = resource.image || 'default-image.jpg'; // If no image in resource, use a default one
+
+        // Add the inline style to set the background image dynamically
+        card.style.backgroundImage = `url('${backgroundImage}')`;
+        
         const cardContent = `
             <h3 class="card-title">${resource.resourceName}</h3>
             <p class="card-description">${resource.description}</p>
@@ -36,16 +42,3 @@ async function displayCards(topic) {
         cardsContainer.appendChild(card);
     });
 }
-
-// Handle navbar item click
-document.querySelectorAll('.navbar-item').forEach(item => {
-    item.addEventListener('click', (e) => {
-        const topic = e.target.textContent;
-        displayCards(topic);
-    });
-});
-
-// Display cards for the default topic when the page loads
-window.onload = function() {
-    displayCards("General Community Tools");
-};
