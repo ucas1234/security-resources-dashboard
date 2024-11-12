@@ -8,7 +8,8 @@
         "wavestoneUseCases": "Web Application Security",
         "secondaryTopic": "Web Security",
         "tertiaryTopic": "Vulnerability Management",
-        "quaternaryTopic": "Open Source"
+        "quaternaryTopic": "Open Source",
+        "image": "images/image.png"
     },
     {
         "primaryTopic": "General Community Tools",
