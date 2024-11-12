@@ -27,18 +27,22 @@ h1, h2, h3, h4 {
     padding: 10px 0px;  /* More consistent vertical spacing */
     z-index: 1000;
     display: flex;
-    justify-content: center; /* Center items horizontally */
+    justify-content: flex-start; /* Start navbar items from the left */
     align-items: center; /* Vertically center the navbar items */
+    overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+    white-space: nowrap; /* Prevent wrapping of navbar items */
+    box-sizing: border-box; /* Ensure padding is included in the total width calculation */
 }
 
+/* Ensure navbar items do not overflow out of view */
 .navbar ul {
     display: flex;
-    justify-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
+/* Navbar items */
 .navbar-item {
     color: white;
     font-size: 13px;
@@ -50,6 +54,7 @@ h1, h2, h3, h4 {
     white-space: nowrap; /* Prevents the text from breaking into multiple lines */
 }
 
+/* Hover effect */
 .navbar-item:hover {
     background-color: #4b5d7e;
     color: #f4f7fa;
