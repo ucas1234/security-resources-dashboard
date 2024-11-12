@@ -1,10 +1,6 @@
-// script.js
-
-// Define the resources directly in the script
-const resources = [
-    {
+{
         "primaryTopic": "General Community Tools",
-        "resourceName": "OWASP Resources",
+        "resourceName": "PLACEHOLDER",
         "description": "Collection of tools for web security testing and community resources.",
         "resourceProvider": "OWASP",
         "link": "https://owasp.org",
@@ -15,7 +11,7 @@ const resources = [
     },
     {
         "primaryTopic": "General Community Tools",
-        "resourceName": "Kali Linux",
+        "resourceName": "PLACEHOLDER",
         "description": "A Linux distribution for penetration testing and security auditing.",
         "resourceProvider": "Offensive Security",
         "link": "https://www.kali.org",
@@ -26,7 +22,7 @@ const resources = [
     },
     {
         "primaryTopic": "Network Security",
-        "resourceName": "Wireshark",
+        "resourceName": "PLACEHOLDER",
         "description": "Network protocol analyzer used for troubleshooting and analysis.",
         "resourceProvider": "Wireshark Foundation",
         "link": "https://www.wireshark.org",
@@ -37,7 +33,7 @@ const resources = [
     },
     {
         "primaryTopic": "Network Security",
-        "resourceName": "Nmap",
+        "resourceName": "PLACEHOLDER",
         "description": "Network scanner used for security auditing and network discovery.",
         "resourceProvider": "Nmap Project",
         "link": "https://nmap.org",
@@ -48,7 +44,7 @@ const resources = [
     },
     {
         "primaryTopic": "Detection Engineering",
-        "resourceName": "Suricata",
+        "resourceName": "PLACEHOLDER",
         "description": "High-performance Network IDS, IPS, and Network Security Monitoring (NSM) engine.",
         "resourceProvider": "Open Information Security Foundation",
         "link": "https://suricata-ids.org",
@@ -59,7 +55,7 @@ const resources = [
     },
     {
         "primaryTopic": "Detection Engineering",
-        "resourceName": "Elastic Stack",
+        "resourceName": "PLACEHOLDER",
         "description": "Search and analysis engine used for log management and security monitoring.",
         "resourceProvider": "Elastic",
         "link": "https://www.elastic.co",
@@ -70,7 +66,7 @@ const resources = [
     },
     {
         "primaryTopic": "EDR&XDR&NDR",
-        "resourceName": "CrowdStrike Falcon",
+        "resourceName": "PLACEHOLDER",
         "description": "Cloud-native endpoint protection platform with EDR, XDR, and NDR features.",
         "resourceProvider": "CrowdStrike",
         "link": "https://www.crowdstrike.com",
@@ -81,7 +77,7 @@ const resources = [
     },
     {
         "primaryTopic": "EDR&XDR&NDR",
-        "resourceName": "SentinelOne",
+        "resourceName": "PLACEHOLDER",
         "description": "Autonomous endpoint protection with EDR and XDR capabilities.",
         "resourceProvider": "SentinelOne",
         "link": "https://www.sentinelone.com",
@@ -92,7 +88,7 @@ const resources = [
     },
     {
         "primaryTopic": "SIEM",
-        "resourceName": "Splunk",
+        "resourceName": "PLACEHOLDER",
         "description": "Data analytics platform used for SIEM and log analysis.",
         "resourceProvider": "Splunk",
         "link": "https://www.splunk.com",
@@ -103,7 +99,7 @@ const resources = [
     },
     {
         "primaryTopic": "SIEM",
-        "resourceName": "IBM QRadar",
+        "resourceName": "PLACEHOLDER",
         "description": "SIEM platform that provides security intelligence and analytics.",
         "resourceProvider": "IBM",
         "link": "https://www.ibm.com/security/qradar",
@@ -114,7 +110,7 @@ const resources = [
     },
     {
         "primaryTopic": "SOC",
-        "resourceName": "Darktrace",
+        "resourceName": "PLACEHOLDER",
         "description": "AI-driven cybersecurity platform for proactive threat detection.",
         "resourceProvider": "Darktrace",
         "link": "https://www.darktrace.com",
@@ -125,7 +121,7 @@ const resources = [
     },
     {
         "primaryTopic": "SOC",
-        "resourceName": "Sumo Logic",
+        "resourceName": "PLACEHOLDER",
         "description": "Cloud-native SIEM for real-time security monitoring and data analytics.",
         "resourceProvider": "Sumo Logic",
         "link": "https://www.sumologic.com",
@@ -136,7 +132,7 @@ const resources = [
     },
     {
         "primaryTopic": "Incident Response",
-        "resourceName": "TheHive Project",
+        "resourceName": "PLACEHOLDER",
         "description": "An open-source incident response platform for security teams.",
         "resourceProvider": "TheHive Project",
         "link": "https://thehive-project.org",
@@ -147,7 +143,7 @@ const resources = [
     },
     {
         "primaryTopic": "Incident Response",
-        "resourceName": "Cortex XSOAR",
+        "resourceName": "PLACEHOLDER",
         "description": "Security orchestration, automation, and response platform.",
         "resourceProvider": "Palo Alto Networks",
         "link": "https://www.paloaltonetworks.com/cortex/cortex-xsoar",
@@ -158,7 +154,7 @@ const resources = [
     },
     {
         "primaryTopic": "Threat Intelligence",
-        "resourceName": "ThreatConnect",
+        "resourceName": "PLACEHOLDER",
         "description": "Threat intelligence platform for aggregation, analysis, and sharing.",
         "resourceProvider": "ThreatConnect",
         "link": "https://www.threatconnect.com",
@@ -169,7 +165,7 @@ const resources = [
     },
     {
         "primaryTopic": "Threat Intelligence",
-        "resourceName": "MISP",
+        "resourceName": "PLACEHOLDER",
         "description": "Open-source threat intelligence platform for sharing and correlation.",
         "resourceProvider": "MISP Project",
         "link": "https://www.misp-project.org",
@@ -180,7 +176,7 @@ const resources = [
     },
     {
         "primaryTopic": "AI in SecOps",
-        "resourceName": "IBM Watson for Cyber Security",
+        "resourceName": "PLACEHOLDER",
         "description": "AI-powered cybersecurity platform to detect and mitigate threats.",
         "resourceProvider": "IBM",
         "link": "https://www.ibm.com/watson-security",
@@ -191,7 +187,7 @@ const resources = [
     },
     {
         "primaryTopic": "AI in SecOps",
-        "resourceName": "Darktrace AI",
+        "resourceName": "PLACEHOLDER",
         "description": "AI-driven platform that autonomously detects and responds to cyber threats.",
         "resourceProvider": "Darktrace",
         "link": "https://www.darktrace.com",
@@ -202,7 +198,7 @@ const resources = [
     },
     {
         "primaryTopic": "Vulnerability Management",
-        "resourceName": "Qualys",
+        "resourceName": "PLACEHOLDER",
         "description": "Cloud-based platform for continuous vulnerability management.",
         "resourceProvider": "Qualys",
         "link": "https://www.qualys.com",
@@ -213,7 +209,7 @@ const resources = [
     },
     {
         "primaryTopic": "Vulnerability Management",
-        "resourceName": "Tenable.io",
+        "resourceName": "PLACEHOLDER",
         "description": "Platform for comprehensive vulnerability management and risk reduction.",
         "resourceProvider": "Tenable",
         "link": "https://www.tenable.com",
@@ -222,43 +218,3 @@ const resources = [
         "tertiaryTopic": "Risk Management",
         "quaternaryTopic": "Continuous Scanning"
     }
-];
-
-// Function to display the cards based on the selected topic
-function displayCards(topic) {
-    const cardsContainer = document.getElementById('cards-container');
-    cardsContainer.innerHTML = ''; // Clear existing cards
-
-    const filteredResources = resources.filter(resource => resource.primaryTopic === topic);
-
-    filteredResources.forEach(resource => {
-        const card = document.createElement('div');
-        card.classList.add('card');
-
-        const cardContent = `
-            <h3 class="card-title">${resource.resourceName}</h3>
-            <p class="card-description">${resource.description}</p>
-            <p><strong>Provider:</strong> ${resource.resourceProvider}</p>
-            <p><strong>Use Case:</strong> ${resource.wavestoneUseCases}</p>
-            <p><strong>Link:</strong> <a href="${resource.link}" target="_blank">${resource.link}</a></p>
-            <p><strong>Secondary Topic:</strong> ${resource.secondaryTopic}</p>
-            <p><strong>Tertiary Topic:</strong> ${resource.tertiaryTopic}</p>
-            <p><strong>Quaternary Topic:</strong> ${resource.quaternaryTopic}</p>
-        `;
-        card.innerHTML = cardContent;
-        cardsContainer.appendChild(card);
-    });
-}
-
-// Handle navbar item click
-document.querySelectorAll('.navbar-item').forEach(item => {
-    item.addEventListener('click', (e) => {
-        const topic = e.target.textContent;
-        displayCards(topic);
-    });
-});
-
-// Display cards for the default topic when the page loads
-window.onload = function() {
-    displayCards("General Community Tools");
-};
