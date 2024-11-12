@@ -23,6 +23,28 @@ const resources = [
         "quaternaryTopic": "OS"
     },
     {
+        "primaryTopic": "General Community Tools",
+        "resourceName": "Cybersecurity: Databases & Recommended Resources",
+        "description": "A collection of resources relating to Cyber Security.",
+        "resourceProvider": "Fordham University Libraries",
+        "link": "https://fordham.libguides.com/Cybersecurity/Databases",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "",
+        "tertiaryTopic": "",
+        "quaternaryTopic": ""
+    },
+    {
+        "primaryTopic": "General Community Tools",
+        "resourceName": "Kali Linux",
+        "description": "A Linux distribution for penetration testing and security auditing.",
+        "resourceProvider": "Offensive Security",
+        "link": "https://www.kali.org",
+        "wavestoneUseCases": "Penetration Testing",
+        "secondaryTopic": "Pentesting",
+        "tertiaryTopic": "Linux",
+        "quaternaryTopic": "OS"
+    },
+    {
         "primaryTopic": "Network Security",
         "resourceName": "Wireshark",
         "description": "Network protocol analyzer used for troubleshooting and analysis.",
