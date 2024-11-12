@@ -10,8 +10,7 @@ body {
     background-color: #f4f7fa;
     color: #333;
     line-height: 1.6;
-    padding-top: 60px; /* Reasonable space to offset navbar */
-    margin-top: 0; /* Reset margin to avoid extra space */
+    padding-top: 60px; /* To prevent navbar from overlapping with content */
 }
 
 h1, h2, h3, h4 {
@@ -25,31 +24,27 @@ h1, h2, h3, h4 {
     left: 0;
     width: 100%;
     background-color: #2a3d66;
-    padding: 10px 0;  /* Default padding for navbar */
+    padding: 10px 0px;  /* More consistent vertical spacing */
     z-index: 1000;
     display: flex;
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: center; /* Center items horizontally */
     align-items: center; /* Vertically center the navbar items */
-    overflow-x: auto; /* Allows horizontal scrolling if the navbar content is too wide */
-    white-space: nowrap; /* Prevent items from wrapping to the next line */
 }
 
 .navbar ul {
     display: flex;
-    justify-content: flex-start; /* Align navbar items horizontally */
+    justify-content: center;
     list-style: none;
-    gap: 0px;  /* Space between the navbar items */
     margin: 0;
     padding: 0;
-    flex-wrap: nowrap; /* Prevent wrapping of items */
 }
 
 .navbar-item {
     color: white;
-    font-size: 16px;
+    font-size: 13px;
     cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 4px;
+    padding: 8px 15px;
+    border-radius: 10px;
     text-align: center; /* Ensure text is centered in each item */
     transition: background-color 0.3s, color 0.3s;
     white-space: nowrap; /* Prevents the text from breaking into multiple lines */
@@ -66,7 +61,7 @@ h1, h2, h3, h4 {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
     padding: 20px;
-    margin-top: 70px; /* Small margin to give space without being too much */
+    margin-top: 2px;
 }
 
 /* Card Styles */
@@ -122,33 +117,4 @@ h1, h2, h3, h4 {
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    /* Adjust navbar padding for smaller screens */
-    .navbar {
-        padding: 10px 0; /* Adjust navbar height on smaller screens */
-    }
-
-    /* Adjust body padding to account for smaller navbar height */
-    body {
-        padding-top: 55px; /* Slightly reduced padding for mobile */
-    }
-
-    /* Adjust cards container margin for smaller screens */
-    .cards-container {
-        margin-top: 70px; /* Reduce space on mobile */
-    }
-
-    /* Optionally, adjust card grid layout for smaller screens */
-    .cards-container {
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Smaller columns */
-    }
-
-    /* Make navbar items more compact on small screens */
-    .navbar-item {
-        font-size: 14px; /* Smaller font size */
-        padding: 8px 16px; /* Reduced padding */
-    }
 }
