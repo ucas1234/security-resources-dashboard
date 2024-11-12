@@ -29,27 +29,27 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Vertically center the navbar items */
-    overflow-x: auto; /* Allows scrolling if the navbar content is too wide */
+    overflow: hidden; /* Prevent overflow */
+    white-space: nowrap; /* Prevent wrapping of navbar items */
 }
 
 .navbar ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    gap: 20px;  /* Space between the navbar items */
     margin: 0;
     padding: 0;
-    flex-wrap: wrap; /* Allows items to wrap if necessary */
-    max-width: 100%; /* Prevent overflow */
+    gap: 15px;  /* Reduced gap between navbar items */
+    flex-wrap: nowrap; /* Prevent wrapping of navbar items */
 }
 
 .navbar-item {
     color: white;
-    font-size: 16px;
+    font-size: 14px; /* Reduced font size for smaller screens */
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 8px 16px; /* Reduced padding for better fitting */
     border-radius: 4px;
-    text-align: center; /* Ensure text is centered in each item */
+    text-align: center;
     transition: background-color 0.3s, color 0.3s;
     white-space: nowrap; /* Prevents the text from breaking into multiple lines */
 }
@@ -57,6 +57,22 @@ h1, h2, h3, h4 {
 .navbar-item:hover {
     background-color: #4b5d7e;
     color: #f4f7fa;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 8px 0; /* Less padding for mobile */
+    }
+
+    .navbar ul {
+        gap: 10px; /* Reduced gap for mobile */
+    }
+
+    .navbar-item {
+        font-size: 12px; /* Further reduce font size for smaller screens */
+        padding: 6px 12px; /* Further reduce padding */
+    }
 }
 
 /* Cards Container */
