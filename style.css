@@ -29,7 +29,7 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Vertically center the navbar items */
-    overflow: hidden; /* Prevent overflow */
+    overflow: visible; /* Allow overflow for flexible widths */
     white-space: nowrap; /* Prevent wrapping of navbar items */
 }
 
@@ -41,6 +41,9 @@ h1, h2, h3, h4 {
     padding: 0;
     gap: 15px;  /* Reduced gap between navbar items */
     flex-wrap: nowrap; /* Prevent wrapping of navbar items */
+    width: 100%; /* Ensure the ul takes full width */
+    max-width: 1200px; /* Optional: to limit the navbar width */
+    margin: 0 auto; /* Optional: to center it if you want to limit the width */
 }
 
 .navbar-item {
