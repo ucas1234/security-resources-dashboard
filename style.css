@@ -24,15 +24,20 @@ h1, h2, h3, h4 {
     left: 0;
     width: 100%;
     background-color: #2a3d66;
-    padding: 10px 20px;
+    padding: 10px 0;  /* More consistent vertical spacing */
     z-index: 1000;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Vertically center the navbar items */
 }
 
 .navbar ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    gap: 20px;
+    gap: 20px;  /* Space between the navbar items */
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-item {
@@ -41,7 +46,9 @@ h1, h2, h3, h4 {
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 4px;
+    text-align: center; /* Ensure text is centered in each item */
     transition: background-color 0.3s, color 0.3s;
+    white-space: nowrap; /* Prevents the text from breaking into multiple lines */
 }
 
 .navbar-item:hover {
@@ -90,7 +97,9 @@ h1, h2, h3, h4 {
     color: #2a3d66;
     text-decoration: none;
     font-weight: 600;
-    word-break: break-word; /* Ensures the link wraps if it's too long */
+    display: block;  /* Ensures the link is treated as a block element */
+    word-break: break-word; /* Ensure the link wraps properly */
+    white-space: normal;  /* Allow the text to wrap and not be in a single line */
 }
 
 .card a:hover {
