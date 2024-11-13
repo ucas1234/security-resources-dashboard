@@ -1,3 +1,0 @@
-how do I build an interactive web app dashboard that looks visually appealing and easy to use, it should have links to web resources across 10 topics: General Community Tools, Network, 
-Security, Detection Engineering, EDR&NDR&XDR, SIEM, SOC, Incident Response, Threat Intelligence, AI in SecOps and Vulnerability Management. My preference is to use node.js but if this 
-doesn't allow for all functionality please tell me how to do this. I am a beginner please give all the code and walk through every step

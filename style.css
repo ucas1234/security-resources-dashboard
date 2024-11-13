@@ -13,21 +13,17 @@ body {
     padding-top: 60px; /* To prevent navbar from overlapping with content */
 }
 
-h1, h2, h3, h4 {
-    color: #2a3d66;
-}
-
 /* Navbar Styles */
 .navbar {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 0;  /* Align it to the left side */
+    width: 100%;  /* Make the navbar span the full width of the screen */
     background-color: #2a3d66;
     padding: 10px 0px;  /* More consistent vertical spacing */
     z-index: 1000;
     display: flex;
-    justify-content: flex-start; /* Start navbar items from the left */
+    justify-content: center; /* Center navbar items horizontally */
     align-items: center; /* Vertically center the navbar items */
     overflow-x: auto; /* Enable horizontal scrolling if content overflows */
     white-space: nowrap; /* Prevent wrapping of navbar items */
@@ -152,4 +148,3 @@ h1, h2, h3, h4 {
     margin: 0 auto;
     max-width: 1200px;
 }
-
