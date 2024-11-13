@@ -237,10 +237,10 @@
         "description": "Cloud-native endpoint protection platform with EDR, XDR, and NDR features.",
         "resourceProvider": "CrowdStrike",
         "link": "https://www.crowdstrike.com",
-        "wavestoneUseCases": "Endpoint Protection",
-        "secondaryTopic": "EDR",
-        "tertiaryTopic": "XDR",
-        "quaternaryTopic": "Cloud"
+        "wavestoneUseCases": "",
+        "secondaryTopic": "Threat Intelligence",
+        "tertiaryTopic": "SIEM",
+        "quaternaryTopic": "Incident Response"
     },
     {
         "primaryTopic": "EDR&XDR&NDR",
@@ -252,6 +252,17 @@
         "secondaryTopic": "XDR",
         "tertiaryTopic": "AI",
         "quaternaryTopic": "Autonomous Security"
+    },
+    {
+        "primaryTopic": "EDR&XDR&NDR",
+        "resourceName": "Windows EDR Telemetry",
+        "description": "Explore detailed telemetry capabilities and comparisons for Windows-based EDR solutions..",
+        "resourceProvider": "EDR Telemetry",
+        "link": "https://www.edr-telemetry.com/windows.html",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "",
+        "tertiaryTopic": "",
+        "quaternaryTopic": ""
     },
     {
         "primaryTopic": "SIEM",
@@ -276,6 +287,17 @@
         "quaternaryTopic": "Threat Detection"
     },
     {
+        "primaryTopic": "SIEM",
+        "resourceName": "Rex: Rule Explorer",
+        "description": "This is a collection and breakdown of several of the most popular open security detection rules for analysis and exploration, enabled by the powerful search and visualization capabilities of the Elastic stack!.",
+        "resourceProvider": "br0k3nlab",
+        "link": "https://rulexplorer.io/r",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "Detection Engineering",
+        "tertiaryTopic": "SOC",
+        "quaternaryTopic": ""
+    },
+    {
         "primaryTopic": "SOC",
         "resourceName": "Darktrace",
         "description": "AI-driven cybersecurity platform for proactive threat detection.",
@@ -298,6 +320,17 @@
         "quaternaryTopic": "Security Analytics"
     },
     {
+        "primaryTopic": "SOC",
+        "resourceName": "SANS Security Operations Center",
+        "description": "A comprehensive guide to building and leading a successful security operations center..",
+        "resourceProvider": "SANS Institute",
+        "link": "https://www.sans.org/posters/guide-to-security-operations/",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "Incident Response",
+        "tertiaryTopic": "Threat Intelligence",
+        "quaternaryTopic": ""
+    },
+    {
         "primaryTopic": "Incident Response",
         "resourceName": "TheHive Project",
         "description": "An open-source incident response platform for security teams.",
@@ -318,6 +351,50 @@
         "secondaryTopic": "SOAR",
         "tertiaryTopic": "Incident Response",
         "quaternaryTopic": "Automation"
+    },
+    {
+        "primaryTopic": "Incident Response",
+        "resourceName": "Incident Response Program Pack",
+        "description": "The goal of the incident response release pack is to provide you with everything you'd need to establish a functioning security incident response program at your company.",
+        "resourceProvider": "SecurityTemplates",
+        "link": "https://github.com/securitytemplates/sectemplates/tree/main/incident-response/v1",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "",
+        "tertiaryTopic": "",
+        "quaternaryTopic": ""
+    },
+    {
+        "primaryTopic": "Incident Response",
+        "resourceName": "Cloud Threat Landscape",
+        "description": "This website is a curated public instance of Wiz Research’s internal cloud threat intelligence database, summarizing information about publicly disclosed cloud security incidents and campaigns. Additionally, the database lists threat actors known to have compromised cloud environments, the tools and techniques in their arsenal, and the technologies they prefer to target. It's current focus is on threat activity known to impact public cloud environments, CI/CD systems and source code management systems, as well as potential threats to servers in general. Incidents are only included if sufficient information is available about them to understand their root cause.",
+        "resourceProvider": "Wiz Research",
+        "link": "https://threats.wiz.io/",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "Network Security",
+        "tertiaryTopic": "Threat Intelligence",
+        "quaternaryTopic": ""
+    },
+    {
+        "primaryTopic": "Incident Response",
+        "resourceName": "Public IOC Database",
+        "description": "This repo contains public indicators of compromise aggregated by Wiz Research.",
+        "resourceProvider": "Wiz Research",
+        "link": "https://github.com/wiz-sec-public/wiz-research-iocs/blob/main/atomic_cloud_iocs.csv",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "Network Security",
+        "tertiaryTopic": "Threat Intelligence",
+        "quaternaryTopic": ""
+    },
+    {
+        "primaryTopic": "Incident Response",
+        "resourceName": "CERT Coordination Center",
+        "description": "The CERT Division is a leader in cybersecurity. They partner with government, industry, law enforcement, and academia to improve the security and resilience of computer systems and networks. They study problems that have widespread cybersecurity implications and develop advanced methods and tools to counter large-scale, sophisticated cyber threats.",
+        "resourceProvider": "CERT",
+        "link": "https://www.cert.org/",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "",
+        "tertiaryTopic": "",
+        "quaternaryTopic": ""
     },
     {
         "primaryTopic": "Threat Intelligence",
