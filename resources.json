@@ -127,7 +127,7 @@
         "description": "Network protocol analyzer used for troubleshooting and analysis.",
         "resourceProvider": "Wireshark Foundation",
         "link": "https://www.wireshark.org",
-        "wavestoneUseCases": "Network Traffic Analysis",
+        "wavestoneUseCases": "",
         "secondaryTopic": "Network Analysis",
         "tertiaryTopic": "Packet Capture",
         "quaternaryTopic": "Open Source"
@@ -138,10 +138,76 @@
         "description": "Network scanner used for security auditing and network discovery.",
         "resourceProvider": "Nmap Project",
         "link": "https://nmap.org",
-        "wavestoneUseCases": "Network Scanning",
+        "wavestoneUseCases": "",
         "secondaryTopic": "Network Discovery",
         "tertiaryTopic": "Scanning",
         "quaternaryTopic": "Open Source"
+    },
+    {
+        "primaryTopic": "Network Security",
+        "resourceName": "Cloud-Conscious Tactics, Techniques and Procedures Overview",
+        "description": "This deck by CrowdStrike, hosted on the Cloud Security Forum Slack Workspace outlines Cloud-Conscious TTPs, including threat actors within cloud networks, most common attack tactics, and techniques and some AWS case studies, including an overview of the cyber threat group Scattered Spider. The Cloud Security Forum Slack workspace is an active and vibrant forum for all things cloud security, and where the fwd:cloudsec conferences are organized. There are active communities around AWS, Azure, GCP, threat detection, jobs, and events. Membership is open to anyone, at any level of cloud security expertise.",
+        "resourceProvider": "fwd:cloudsec",
+        "link": "https://fwdcloudsec.org/assets/presentations/2024/europe/sebastian-walla-cloud-conscious-tactics-techniques-and-procedures-an-overview.pdf",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "Threat Intelligence",
+        "tertiaryTopic": "",
+        "quaternaryTopic": ""
+    },
+    {
+        "primaryTopic": "Network Security",
+        "resourceName": "Cloud Security Atlas",
+        "description": "The Cloud Security Atlas by Datadog Security Labs is a risk register for Threats and Vulnerabilities. This database gives you the ability to search and filter on your cloud provider platform, risk type, and sort by impact, exploitability, and recency. Security Labs is the place for our researchers and engineers to publish practitioner-focused, innovative security content. You will find here a mix of threat research, open-source software, and community-focused posts.",
+        "resourceProvider": "Datadog",
+        "link": "https://securitylabs.datadoghq.com/cloud-security-atlas/?platform%5B0%5D=azure&risk_type%5B0%5D=attacks&risk_type%5B1%5D=vulnerabilities",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "Threat Intelligence",
+        "tertiaryTopic": "Vulnerability Management",
+        "quaternaryTopic": "Detecting Engineering"
+    },
+    {
+        "primaryTopic": "Network Security",
+        "resourceName": "CI/CD Providers",
+        "description": "This page contains articles and tools from many different sources relating to CI/CD security. The CloudSecDocs website containing technical notes and knowledge on cloud-native technologies, security, technical leadership, and engineering culture.",
+        "resourceProvider": "CloudSecDocs",
+        "link": "https://cloudsecdocs.com/devops/pipelines/securing/cicd/",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "Threat Intelligence",
+        "tertiaryTopic": "Vulnerability Management",
+        "quaternaryTopic": "EDR&NDR&XDR"
+    },
+    {
+        "primaryTopic": "Network Security",
+        "resourceName": "Cloud Security Resources Hub",
+        "description": "Insights from Google Cloud security experts on the frontlines, helping organizations reduce risk and feel confident in their ability to detect and respond to threats. This contains blog posts, datasheets, events, infographics, insights, podcasts, security reports, technical guides, videos, webinars and whitepapers.",
+        "resourceProvider": "Google",
+        "link": "https://cloud.google.com/security/resources",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "Threat Intelligence",
+        "tertiaryTopic": "Vulnerability Management",
+        "quaternaryTopic": ""
+    },
+    {
+        "primaryTopic": "Network Security",
+        "resourceName": "Security Playbook for Compromised AWS Account Credentials",
+        "description": "AWS is providing this security incident response playbook that describes the steps needed to detect and respond to compromised credentials within your AWS account(s). The purpose of this document is to provide prescriptive guidance on the actions to take once you suspect a security event has taken place.",
+        "resourceProvider": "AWS",
+        "link": "https://github.com/aws-samples/aws-customer-playbook-framework/blob/main/docs/Compromised_IAM_Credentials.md",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "Incident Response",
+        "tertiaryTopic": "Detection Engineering",
+        "quaternaryTopic": "SIEM"
+    },
+    {
+        "primaryTopic": "Network Security",
+        "resourceName": "Pivot Atlas",
+        "description": "This is an educational pivoting handbook for cyber threat intelligence analysts. This website contains simple reference material for how to make the best use of various threat activity observables, such as IP addresses and file hashes. The goal is to map the pivotability of every type of artifact that analysts might encounter in the course of their investigations. For any given observable, analysts can use this handbook to figure out what steps they should take to reveal potentially related malicious infrastructure or tooling. Every listed pivoting method can be performed using one or more tools (depending on preference or which platforms you have access to), and query examples are provided for the most commonly used tools. Mermaid diagrams are also included for easy and clickable navigation between artifact types.",
+        "resourceProvider": "Pivot Atlas",
+        "link": "https://gopivot.ing/",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "Threat Intelligence",
+        "tertiaryTopic": "",
+        "quaternaryTopic": ""
     },
     {
         "primaryTopic": "Detection Engineering",
