@@ -5,7 +5,7 @@
         "description": "Collection of tools for web security testing and community resources.",
         "resourceProvider": "OWASP",
         "link": "https://owasp.org",
-        "wavestoneUseCases": "Web Application Security",
+        "wavestoneUseCases": "",
         "secondaryTopic": "Web Security",
         "tertiaryTopic": "Vulnerability Management",
         "quaternaryTopic": "Open Source",
@@ -17,7 +17,7 @@
         "description": "A Linux distribution for penetration testing and security auditing.",
         "resourceProvider": "Offensive Security",
         "link": "https://www.kali.org",
-        "wavestoneUseCases": "Penetration Testing",
+        "wavestoneUseCases": "",
         "secondaryTopic": "Pentesting",
         "tertiaryTopic": "Linux",
         "quaternaryTopic": "OS"
@@ -215,7 +215,7 @@
         "description": "High-performance Network IDS, IPS, and Network Security Monitoring (NSM) engine.",
         "resourceProvider": "Open Information Security Foundation",
         "link": "https://suricata-ids.org",
-        "wavestoneUseCases": "Network Security Monitoring",
+        "wavestoneUseCases": "",
         "secondaryTopic": "IDS",
         "tertiaryTopic": "IPS",
         "quaternaryTopic": "NSM"
@@ -226,10 +226,43 @@
         "description": "Search and analysis engine used for log management and security monitoring.",
         "resourceProvider": "Elastic",
         "link": "https://www.elastic.co",
-        "wavestoneUseCases": "Log Management",
+        "wavestoneUseCases": "",
         "secondaryTopic": "Log Analysis",
         "tertiaryTopic": "Security Monitoring",
         "quaternaryTopic": "SIEM"
+    },
+    {
+        "primaryTopic": "Detection Engineering",
+        "resourceName": "DIANA: Detection and Intelligence Analysis for New Alerts",
+        "description": "DIANA (Detection and Intelligence Analysis for New Alerts) is an AI-powered tool designed to streamline the detection writing process in cybersecurity operations. It is used to automate the creation of detections from threat intelligence, reduce manual effort in researching log sources and writing queries and generate investigation steps and quality assurance checks DIANA leverages large language models (LLMs) to process threat intelligence and provide detailed detection rules based on the input provided.",
+        "resourceProvider": "Dylan Williams",
+        "link": "https://github.com/dwillowtree/diana?utm_source=tldrsec.com&utm_medium=newsletter&utm_campaign=tl-dr-sec-242-engineering-a-siem-automating-detections-with-llms-reversing-aws-session-tokens&_bhlid=3350159a739640511fec7ea92101c8c51f872bed",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "AI in SecOps",
+        "tertiaryTopic": "",
+        "quaternaryTopic": ""
+    },
+    {
+        "primaryTopic": "Detection Engineering",
+        "resourceName": "STRIDE GPT",
+        "description": "STRIDE GPT is an AI-powered tool designed to help teams produce better threat models for their applications. STRIDE GPT aims to help teams produce more comprehensive threat models by leveraging the power of Large Language Models (LLMs) to generate a threat list, attack tree and/or mitigating controls for an application based on the details provided.",
+        "resourceProvider": "Matt Adams",
+        "link": "https://stridegpt.streamlit.app/",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "AI in SecOps",
+        "tertiaryTopic": "",
+        "quaternaryTopic": ""
+    },
+    {
+        "primaryTopic": "Detection Engineering",
+        "resourceName": "AttackGen",
+        "description": "AttackGen uses MITRE ATT&CK and LLM's to generate attack scenarios for incident response testing. The MITRE ATT&CK framework is a powerful tool for understanding the tactics, techniques, and procedures (TTPs) used by threat actors; however, it can be difficult to translate this information into realistic scenarios for testing. AttackGen solves this problem by using large language models to quickly generate attack scenarios based on a selection of a threat actor group's known techniques.",
+        "resourceProvider": "Matt Adams",
+        "link": "https://attackgen.streamlit.app/",
+        "wavestoneUseCases": "",
+        "secondaryTopic": "AI in SecOps",
+        "tertiaryTopic": "Incident Response",
+        "quaternaryTopic": ""
     },
     {
         "primaryTopic": "EDR&XDR&NDR",
@@ -248,7 +281,7 @@
         "description": "Autonomous endpoint protection with EDR and XDR capabilities.",
         "resourceProvider": "SentinelOne",
         "link": "https://www.sentinelone.com",
-        "wavestoneUseCases": "Endpoint Detection",
+        "wavestoneUseCases": "",
         "secondaryTopic": "XDR",
         "tertiaryTopic": "AI",
         "quaternaryTopic": "Autonomous Security"
@@ -270,7 +303,7 @@
         "description": "Data analytics platform used for SIEM and log analysis.",
         "resourceProvider": "Splunk",
         "link": "https://www.splunk.com",
-        "wavestoneUseCases": "Log Management",
+        "wavestoneUseCases": "",
         "secondaryTopic": "Security Information",
         "tertiaryTopic": "Event Management",
         "quaternaryTopic": "Data Analytics"
@@ -281,7 +314,7 @@
         "description": "SIEM platform that provides security intelligence and analytics.",
         "resourceProvider": "IBM",
         "link": "https://www.ibm.com/security/qradar",
-        "wavestoneUseCases": "Security Analytics",
+        "wavestoneUseCases": "",
         "secondaryTopic": "Security Intelligence",
         "tertiaryTopic": "Log Correlation",
         "quaternaryTopic": "Threat Detection"
@@ -303,7 +336,7 @@
         "description": "AI-driven cybersecurity platform for proactive threat detection.",
         "resourceProvider": "Darktrace",
         "link": "https://www.darktrace.com",
-        "wavestoneUseCases": "Threat Detection",
+        "wavestoneUseCases": "",
         "secondaryTopic": "SOC",
         "tertiaryTopic": "AI",
         "quaternaryTopic": "Autonomous Defense"
@@ -314,7 +347,7 @@
         "description": "Cloud-native SIEM for real-time security monitoring and data analytics.",
         "resourceProvider": "Sumo Logic",
         "link": "https://www.sumologic.com",
-        "wavestoneUseCases": "Real-time Monitoring",
+        "wavestoneUseCases": "",
         "secondaryTopic": "Cloud Security",
         "tertiaryTopic": "SIEM",
         "quaternaryTopic": "Security Analytics"
@@ -336,7 +369,7 @@
         "description": "An open-source incident response platform for security teams.",
         "resourceProvider": "TheHive Project",
         "link": "https://thehive-project.org",
-        "wavestoneUseCases": "Incident Management",
+        "wavestoneUseCases": "",
         "secondaryTopic": "IR",
         "tertiaryTopic": "Forensics",
         "quaternaryTopic": "Open Source"
@@ -347,7 +380,7 @@
         "description": "Security orchestration, automation, and response platform.",
         "resourceProvider": "Palo Alto Networks",
         "link": "https://www.paloaltonetworks.com/cortex/cortex-xsoar",
-        "wavestoneUseCases": "Security Automation",
+        "wavestoneUseCases": "",
         "secondaryTopic": "SOAR",
         "tertiaryTopic": "Incident Response",
         "quaternaryTopic": "Automation"
@@ -402,7 +435,7 @@
         "description": "Threat intelligence platform for aggregation, analysis, and sharing.",
         "resourceProvider": "ThreatConnect",
         "link": "https://www.threatconnect.com",
-        "wavestoneUseCases": "Threat Intelligence Sharing",
+        "wavestoneUseCases": "",
         "secondaryTopic": "Cyber Threat Intelligence",
         "tertiaryTopic": "Threat Data",
         "quaternaryTopic": "Collaboration"
@@ -413,7 +446,7 @@
         "description": "Open-source threat intelligence platform for sharing and correlation.",
         "resourceProvider": "MISP Project",
         "link": "https://www.misp-project.org",
-        "wavestoneUseCases": "Threat Sharing",
+        "wavestoneUseCases": "",
         "secondaryTopic": "Threat Intelligence",
         "tertiaryTopic": "Open Source",
         "quaternaryTopic": "Collaboration"
@@ -424,7 +457,7 @@
         "description": "AI-powered cybersecurity platform to detect and mitigate threats.",
         "resourceProvider": "IBM",
         "link": "https://www.ibm.com/watson-security",
-        "wavestoneUseCases": "AI-Powered Security",
+        "wavestoneUseCases": "",
         "secondaryTopic": "AI in Cyber Security",
         "tertiaryTopic": "Threat Detection",
         "quaternaryTopic": "Cognitive Computing"
@@ -435,7 +468,7 @@
         "description": "AI-driven platform that autonomously detects and responds to cyber threats.",
         "resourceProvider": "Darktrace",
         "link": "https://www.darktrace.com",
-        "wavestoneUseCases": "Autonomous Defense",
+        "wavestoneUseCases": "",
         "secondaryTopic": "AI",
         "tertiaryTopic": "Machine Learning",
         "quaternaryTopic": "Cyber Security"
@@ -446,7 +479,7 @@
         "description": "Cloud-based platform for continuous vulnerability management.",
         "resourceProvider": "Qualys",
         "link": "https://www.qualys.com",
-        "wavestoneUseCases": "Vulnerability Scanning",
+        "wavestoneUseCases": "",
         "secondaryTopic": "Vulnerability Management",
         "tertiaryTopic": "Cloud Security",
         "quaternaryTopic": "Automated Scanning"
@@ -457,7 +490,7 @@
         "description": "Platform for comprehensive vulnerability management and risk reduction.",
         "resourceProvider": "Tenable",
         "link": "https://www.tenable.com",
-        "wavestoneUseCases": "Vulnerability Assessment",
+        "wavestoneUseCases": "",
         "secondaryTopic": "Vulnerability Management",
         "tertiaryTopic": "Risk Management",
         "quaternaryTopic": "Continuous Scanning"
@@ -468,7 +501,7 @@
         "description": "Platform for comprehensive vulnerability management and risk reduction.",
         "resourceProvider": "Tenable",
         "link": "https://www.tenable.com",
-        "wavestoneUseCases": "Vulnerability Assessment",
+        "wavestoneUseCases": "",
         "secondaryTopic": "Vulnerability Management",
         "tertiaryTopic": "Risk Management",
         "quaternaryTopic": "Continuous Scanning"
